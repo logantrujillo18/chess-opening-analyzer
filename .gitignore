@@ -1,0 +1,24 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code (if you ever open it there)
+.vscode/
+
+# Build outputs
+out/
+target/
+build/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store        # macOS
+Thumbs.db        # Windows
+
+# Java crash logs
+hs_err_pid*
