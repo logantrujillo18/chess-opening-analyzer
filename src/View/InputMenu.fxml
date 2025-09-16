@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OpeningMenu">
+    <children>
+        <Label fx:id="TheOpeningLabel" layoutX="92.0" layoutY="42.0" prefHeight="41.0" prefWidth="409.0" text="Good luck in your upcoming match. Will you be playing as White or Black? Also, what are your Elos?" wrapText="true" />
+        <Label layoutX="51.0" layoutY="165.0" text="I will play as:" />
+        <Label layoutX="52.0" layoutY="249.0" text="What should I do?" />
+        <Button fx:id="TheSubmitButton" layoutX="276.0" layoutY="308.0" mnemonicParsing="false" onAction="#onTheSubmitButtonAction" text="Submit" />
+        <TextField fx:id="TheMyEloField" layoutX="174.0" layoutY="113.0" prefHeight="25.0" prefWidth="100.0" promptText="My Elo" />
+        <TextField fx:id="TheOppEloField" layoutX="332.0" layoutY="113.0" prefHeight="25.0" prefWidth="100.0" promptText="Opponent's Elo" />
+      <RadioButton fx:id="TheWhiteRadioButton" layoutX="174.0" layoutY="165.0" mnemonicParsing="false" onAction="#onTheWhiteRadioButtonAction" text="White" />
+      <RadioButton fx:id="TheBlackRadioButton" layoutX="330.0" layoutY="165.0" mnemonicParsing="false" onAction="#onTheBlackRadioButtonAction" text="Black" />
+      <RadioButton fx:id="TheSuggestRadioButton" layoutX="174.0" layoutY="249.0" mnemonicParsing="false" onAction="#onTheSuggestRadioButtonAction" text="Suggest an opening" />
+      <RadioButton fx:id="ThePredictRadioButton" layoutX="328.0" layoutY="249.0" mnemonicParsing="false" onAction="#onThePredictRadioButtonAction" prefHeight="17.0" prefWidth="346.0" text="I want to play a certain opening. Please predict the result." wrapText="true" />
+      <ComboBox fx:id="TheOpeningBox" layoutX="674.0" layoutY="245.0" prefWidth="150.0" />
+      <Button fx:id="TheBackButton" layoutX="845.0" layoutY="321.0" mnemonicParsing="false" onAction="#onTheBackButtonAction" text="Back" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainMenu">
+    <children>
+        <Label fx:id="TheWelcomeLabel" layoutX="247.0" layoutY="33.0" text="Welcome!">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="TheReminderLabel" layoutX="134.0" layoutY="82.0" text="" />
+        <Button fx:id="TheSuggestOpeningButton" layoutX="211.0" layoutY="153.0" mnemonicParsing="false" onAction="#onSuggestOpeningAction" text="I need to input my latest result" />
+        <Button fx:id="TheInputResultsButton" layoutX="222.0" layoutY="200.0" mnemonicParsing="false" onAction="#onInputAction" text="I have an upcoming match" />
+        <Button fx:id="TheReportsButton" layoutX="256.0" layoutY="248.0" mnemonicParsing="false" onAction="#onReportsAction" text="Visualizations" />
+        <Button fx:id="TheLogoffButton" layoutX="273.0" layoutY="332.0" mnemonicParsing="false" onAction="#onLogoffAction" text="Log off" />
+    </children>
+</AnchorPane>
